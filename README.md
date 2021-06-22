@@ -28,5 +28,28 @@ Controller | [PD controller](https://github.com/surfii3z/drone_controller/tree/t
 ![Navigation_stack](https://github.com/surfii3z/jy_master_thesis/blob/main/media/Navigation_stack.png)
 
 ## Dependencies
+We make `3` seperated workspace called 
+1) catkin_ws
+```bash
+catkin_ws/src
+├── drone_controller
+├── Fast-Planner
+├── image_proc
+├── image_undistort
+├── robot_localization
+└── tello_driver
+```
+2) orb_slam_ws
 
+```bash
+orb_slam_ws/
+└── orb_slam2
+````
 
+3) packnet_ros_ws
+
+```bash
+packnet_ros_ws/src/
+├── packnet_sfm_ros
+└── vision_opencv
+```
