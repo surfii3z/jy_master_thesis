@@ -32,23 +32,22 @@ We make `3` seperated workspace called
 1) catkin_ws
 ```bash
 catkin_ws/src
-├── [drone_controller](https://github.com/surfii3z/drone_controller)
-├── [Fast-Planner](https://github.com/surfii3z/Fast-Planner/tree/tello_thesis)
+├── [drone_controller](https://github.com/surfii3z/drone_controller/tree/thesis)
+├── [Fast-Planner](https://github.com/surfii3z/Fast-Planner/tree/thesis)
 ├── [image_proc](https://github.com/surfii3z/image_proc/tree/thesis)
 ├── [image_undistort](https://github.com/surfii3z/image_undistort/tree/thesis)
 └── [tello_driver](https://github.com/surfii3z/tello_driver/tree/thesis)
 ```
-2) orb_slam_ws
-
-```bash
-orb_slam_ws/
-└── [orb_slam2](https://github.com/surfii3z/ORB_SLAM2/tree/thesis)
-````
-
-3) packnet_ros_ws
+2) packnet_ros_ws
 
 ```bash
 packnet_ros_ws/src/
-├── [packnet_sfm_ros](https://github.com/surfii3z/packnet_sfm_ros/tree/master)
+├── [packnet_sfm_ros](https://github.com/surfii3z/packnet_sfm_ros)
 └── vision_opencv
 ```
+
+3) ORB_SLAM2
+
+```bash
+[ORB_SLAM2](https://github.com/surfii3z/ORB_SLAM2/tree/thesis)
+````
