@@ -51,3 +51,60 @@ packnet_ros_ws/src/
 ```bash
 [ORB_SLAM2](https://github.com/surfii3z/ORB_SLAM2/tree/thesis)
 ````
+
+## How to run
+We need to use 8 terminals to run
+```bash
+# -------------------------
+# 00_roscore
+roscore
+
+# -------------------------
+# 01_depth_estimation_module
+# pwd: /path/to/packnet_ros_ws
+source install/setup.bash --extend
+rosrun packnet_sfm_ros trt_packnet_node
+
+# -------------------------
+# 02_tello_driver
+# pwd: /path/to/catkin_ws
+source devel/setup.bash
+roslaunch tello_driver thesis_tello_node.launch
+
+# -------------------------
+# 03_visual_SLAM
+# pwd: /path/to/ORB_SLAM2/ros
+source devel/setup.bash
+roslaunch orb_slam2 rgbd_tello_crop.launch
+
+# -------------------------
+# 04_path_planner_visualization
+# pwd: /path/to/catkin_ws
+source devel/setup.bash
+roslaunch plan_manage rviz.launch
+
+# -------------------------
+# 05_path_planner
+# pwd: /path/to/catkin_ws
+source devel/setup.bash
+roslaunch plan_manage tello_kino_replan.launch
+
+
+# -------------------------
+# 06_drone_controller
+# pwd: /path/to/catkin_ws
+source devel/setup.bash
+roslaunch drone_controller waypoint_controller.launch
+
+# -------------------------
+# 07_mission
+# pwd: /path/to/catkin_ws
+source devel/setup.bash
+rosrun drone_controller thesis_mission.py
+```
+![terminal](https://github.com/surfii3z/jy_master_thesis/blob/main/media/terminal.png)
+
+![rosgraph](https://github.com/surfii3z/jy_master_thesis/blob/main/media/rosgraph.png)
+
+## Results
+Please see this [playlist](https://www.youtube.com/watch?v=TcpziH_DZm0&list=PLy765YYpYmKxbRtEeM9Om__sBgPfIyyZO) on Youtube
