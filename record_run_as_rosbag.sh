@@ -1,0 +1,1 @@
+rosbag record /camera/color/image_raw /packnet/color/image_raw /packnet/depth/image_raw /orb_slam/pose /vrpn_client_node/tello/pose /sdf_map/occupancy /sdf_map/occupancy_inflate /planning/position_cmd_vis /planning_vis/trajectory /map_generator/global_cloud /odom_visualization/robot /orb_slam/fast_planner_pose
