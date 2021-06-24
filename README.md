@@ -32,7 +32,7 @@ Controller | [PD controller](https://github.com/surfii3z/drone_controller/tree/t
 ![Navigation_stack](https://github.com/surfii3z/jy_master_thesis/blob/main/media/Navigation_stack.png)
 
 ## Dependencies
-We make `3` seperated workspace called 
+We make `3` seperated workspaces. The installation instruction for each package is in the correspoding link.
 1) catkin_ws
 ```bash
 catkin_ws/src
