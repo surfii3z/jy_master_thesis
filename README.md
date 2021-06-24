@@ -1,5 +1,9 @@
 # Master thesis
 ## General information
+### Important materials
+1) [Presentation](https://drive.google.com/file/d/1pFDCmQryXQwL2Fri5JCQbI7lf9-F2rCw/view?usp=sharing)
+2) [Dissertation](https://drive.google.com/file/d/1lgIQOYwCE5o1goZx6O_hlfct3TAkHzP4/view?usp=sharing)
+
 ### Title
 The development of the scale-aware monocular depth estimation aided monocular visual SLAM system for real-time robot navigation
 
@@ -53,6 +57,7 @@ packnet_ros_ws/src/
 ````
 
 ## How to run
+I experimented this system on `DGX-Station (V100)`, tested with `Ubuntu 18.04 LTS`, `python 3.6.9`, `TensorRT-7.1.3.4`, `PyTorch 1.4.0`, `Cuda 11.0` and `CuDNN 8.0.5`.
 We need to use 8 terminals to run
 ```bash
 # -------------------------
@@ -105,6 +110,8 @@ rosrun drone_controller thesis_mission.py
 ![terminal](https://github.com/surfii3z/jy_master_thesis/blob/main/media/terminal.png)
 
 ![rosgraph](https://github.com/surfii3z/jy_master_thesis/blob/main/media/rosgraph.png)
+
+NOTE: The monocular depth estimation network must be trained based on the application.
 
 ## Results
 Please see this [playlist](https://www.youtube.com/watch?v=TcpziH_DZm0&list=PLy765YYpYmKxbRtEeM9Om__sBgPfIyyZO) on Youtube
