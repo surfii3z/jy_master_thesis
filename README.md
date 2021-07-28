@@ -1,4 +1,5 @@
 # Master thesis
+This thesis work was done as a part of research at [Unmanned System Research Group (USRG)](http://unmanned.kaist.ac.kr/) led by Professor [David Hyunchul Shim](http://unmanned.kaist.ac.kr/bio.html), KAIST, South Korea.
 ## General information
 ### Important materials
 1) [Presentation](https://drive.google.com/file/d/1pFDCmQryXQwL2Fri5JCQbI7lf9-F2rCw/view?usp=sharing)
